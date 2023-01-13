@@ -1,0 +1,12 @@
+_G.loop = false
+
+while _G.loop do task.wait()
+    for i,v in next, game:GetService("Workspace").Game.Map.ItemSpawns:GetChildren() do
+        while _G.loop do task.wait() do
+            game.Players.LocalPlayer.Character.HumanoidRootPart.Position = v.Position
+            task.wait(0.5)
+            break
+            end
+        end
+    end
+end
