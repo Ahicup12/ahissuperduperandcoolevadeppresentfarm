@@ -1,4 +1,4 @@
-_G.loop = false
+_G.loop = true
 
 while _G.loop do task.wait()
     for i,v in next, game:GetService("Workspace").Game.Map.ItemSpawns:GetChildren() do
